@@ -11,10 +11,7 @@ class Solution {
             else{
                 count--;
             }
-            if(count>max)
-            {
-                max=count;
-            }
+            max=Math.max(max,count);
         }
         return max;
         
