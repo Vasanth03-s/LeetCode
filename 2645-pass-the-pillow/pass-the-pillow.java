@@ -3,15 +3,15 @@ class Solution {
         int a=2*(n-1);
         int b=time%a;
         int dir=1;
-        int pos=0;
-        for(int i=0;i<=b;i++)
+        int pos=1;
+        for(int i=0;i<b;i++)
         {
             pos+=dir;
             if(pos==n)
             {
                 dir=-1;
             }
-            else if(pos==0)
+            else if(pos==1)
             {
                 dir=1;
             }
