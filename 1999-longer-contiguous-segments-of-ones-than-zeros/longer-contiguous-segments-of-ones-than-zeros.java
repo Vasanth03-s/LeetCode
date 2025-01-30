@@ -1,9 +1,9 @@
 class Solution {
     public boolean checkZeroOnes(String s) {
         int one=0,two=0,mone=0,lone=0;
-        for(int i=0;i<s.length();i++)
+        for(int i:s.toCharArray())
         {
-            if(s.charAt(i)=='1')
+            if(i=='1')
             {
                 one++;
                 mone=Math.max(one,mone);
