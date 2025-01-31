@@ -8,13 +8,11 @@ class Solution {
             if(h.matches("\\d+"))
             {
                 curr=Integer.parseInt(h);
-                if(curr>max)
+                if(curr<=max)
                 {
-                    max=curr;
-                }
-                else {
                     return false;
                 }
+                max=curr;
             }
         }
        return true;
