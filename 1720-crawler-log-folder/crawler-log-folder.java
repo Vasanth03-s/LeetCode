@@ -4,9 +4,9 @@ class Solution {
         
         for (String log : logs) {
             if (log.equals("../")) {
-                if (count > 0) count--; // Move up only if we're not at the root
+                if (count > 0) count--; 
             } else if (!log.equals("./")) {
-                count++; // Move deeper for any valid folder name
+                count++; 
             }
         }
         
