@@ -13,8 +13,12 @@ class Solution {
             {
                 count++;
                 i++;
+                j++;
             }
-            j++;
+            else
+            {
+                j++;
+            }
         }
         return count;
     }
